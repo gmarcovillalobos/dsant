@@ -1,3 +1,2 @@
-# Welcome to your Lovable project
+Welcome To Nordik Websites
 
-TODO: Document your project here
