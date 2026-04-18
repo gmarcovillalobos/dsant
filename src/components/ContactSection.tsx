@@ -65,7 +65,7 @@ const ContactSection = () => {
                   <div className="font-display font-black text-foreground text-lg">contacto@dsant.com.mx</div>
                 </div>
               </a>
-              <a href="https://wa.me/+5213332558797" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+              <a href="https://wa.me/5213331481362" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center group-hover:bg-green-500 transition-colors">
                   <MessageCircle className="w-5 h-5 text-green-600 group-hover:text-white transition-colors" />
                 </div>

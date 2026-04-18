@@ -62,7 +62,7 @@ const HeroSection = () => (
             className="border-white/30 text-white bg-white/10 hover:bg-white/20 text-base px-10 py-6 font-display font-bold tracking-wide text-lg backdrop-blur-sm"
             asChild
           >
-            <a href="https://wa.me/+5213332558797" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5213331481362" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5 mr-2" />
               WhatsApp
             </a>

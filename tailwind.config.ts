@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Barlow Condensed"', 'system-ui', 'sans-serif'],
-        body: ['"Barlow"', 'system-ui', 'sans-serif'],
+        display: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        body: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -85,11 +85,52 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-8px)" },
         },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "slide-up": {
+          "0%": { opacity: "0", transform: "translateY(16px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-in-right": {
+          "0%": { opacity: "0", transform: "translateX(16px)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        "pulse-subtle": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.8" },
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-1000px 0" },
+          "100%": { backgroundPosition: "1000px 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "float": "float 3s ease-in-out infinite",
+        "fade-in": "fade-in 0.6s ease-out",
+        "slide-up": "slide-up 0.6s ease-out",
+        "slide-in-right": "slide-in-right 0.6s ease-out",
+        "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
+        "shimmer": "shimmer 2s infinite",
+      },
+      transitionTimingFunction: {
+        "smooth": "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+      fontSize: {
+        xs: ["12px", { lineHeight: "16px", letterSpacing: "-0.005em" }],
+        sm: ["14px", { lineHeight: "20px", letterSpacing: "-0.005em" }],
+        base: ["16px", { lineHeight: "24px", letterSpacing: "-0.01em" }],
+        lg: ["18px", { lineHeight: "28px", letterSpacing: "-0.01em" }],
+        xl: ["20px", { lineHeight: "28px", letterSpacing: "-0.015em" }],
+        "2xl": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em" }],
+        "3xl": ["30px", { lineHeight: "36px", letterSpacing: "-0.02em" }],
+        "4xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em" }],
+        "5xl": ["48px", { lineHeight: "48px", letterSpacing: "-0.025em" }],
+        "6xl": ["60px", { lineHeight: "60px", letterSpacing: "-0.03em" }],
+        "7xl": ["72px", { lineHeight: "72px", letterSpacing: "-0.03em" }],
       },
     },
   },
